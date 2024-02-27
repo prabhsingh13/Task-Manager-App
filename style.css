@@ -1,0 +1,88 @@
+/* Imported Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Global CSS */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    user-select: none;
+    background: var(--color1);
+}
+
+:root {
+    --color1: #0C2D57;
+    --color2: #EE4266;
+    --color3: #EE4266;
+    --color4: #5E1675;
+    --black-color: #000;
+    --white-color: #fff;
+    --shadow-color: #000000b6;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color1);
+}
+
+
+.container-fluid {
+    height: 100vh;
+}
+
+.container-fluid .back-text {
+    top: -250px;
+    font-size: 12vw;
+    font-weight: 900;
+    position: relative;
+    color: var(--white-color);
+    /* text-shadow: 0px 0px 50px 5px #000000b6; */
+    text-shadow:
+        5px 5px 8px var(--color2),
+        -3px 3px 2px var(--color2),
+        -3px -3px 0 var(--color2),
+        3px -3px 0 var(--color2);
+
+}
+
+.container-fluid .main {
+    position: absolute;
+    background-color: var(--color2);
+    color: #fff;
+    max-width: 450px;
+    padding: 20px;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.container-fluid .main .taskinput {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.container-fluid .main .taskList {
+    overflow: auto;
+    max-height: 200px;
+
+}
+
+.container-fluid .main .taskList .taskBody {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-fluid .main .taskList .taskBody .buttons {
+    display: inline-flex;
+}
+
